@@ -1,0 +1,164 @@
+.dashboard {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dashboard-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
+  color: var(--white);
+  padding: 40px 0;
+  box-shadow: var(--shadow);
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+  align-items: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: var(--white);
+  color: var(--gray-700);
+  transition: all 0.2s;
+}
+
+.filter-buttons button:hover {
+  background: var(--gray-100);
+}
+
+.filter-buttons button.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.sport-select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  color: var(--gray-700);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.time-banner {
+  background: #fff7ed;
+  border-left: 4px solid var(--secondary);
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.time-banner p {
+  color: #9a3412;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.error-banner {
+  background: #fef2f2;
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-banner p {
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.error-banner button {
+  background: #dc2626;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.error-banner button:hover {
+  background: #b91c1c;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--gray-100);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading p {
+  color: var(--gray-500);
+  font-size: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.empty-title {
+  font-size: 22px;
+  color: var(--gray-700);
+  margin-bottom: 8px;
+}
+
+.empty-subtitle {
+  font-size: 14px;
+  color: var(--gray-500);
+}
+
+.games-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
